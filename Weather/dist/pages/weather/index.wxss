@@ -1,0 +1,129 @@
+.weather__Wrap {
+  font-size: 28rpx;
+  font-weight: 300; }
+  .weather__Wrap text {
+    font-size: 28rpx;
+    font-weight: 300;
+    line-height: 28rpx; }
+  .weather__Wrap icon {
+    font-size: 28rpx; }
+  .weather__Wrap .container {
+    margin-bottom: 20rpx;
+    max-width: 750rpx;
+    box-sizing: border-box;
+    color: #fff; }
+  .weather__Wrap #canvas__Wrap {
+    position: relative; }
+    .weather__Wrap #canvas__Wrap > canvas.effect {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 750rpx;
+      height: 768rpx; }
+    .weather__Wrap #canvas__Wrap .now {
+      position: relative;
+      display: flex;
+      flex-direction: column; }
+      .weather__Wrap #canvas__Wrap .now .location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28rpx;
+        font-weight: 400; }
+        .weather__Wrap #canvas__Wrap .now .location icon {
+          font-size: 30rpx;
+          margin-right: 4rpx; }
+        .weather__Wrap #canvas__Wrap .now .location text {
+          width: 300rpx;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden; }
+      .weather__Wrap #canvas__Wrap .now .air-quality {
+        position: absolute;
+        top: 40rpx;
+        left: 6rpx;
+        display: flex;
+        align-items: center;
+        padding: 10rpx 20rpx;
+        background-color: rgba(0, 0, 0, 0.12);
+        border-radius: 10rpx;
+        font-size: 24rpx; }
+        .weather__Wrap #canvas__Wrap .now .air-quality .circle {
+          margin-right: 6rpx;
+          width: 4rpx;
+          height: 24rpx;
+          background: green;
+          border-radius: 4rpx; }
+      .weather__Wrap #canvas__Wrap .now .now-weather {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40rpx; }
+        .weather__Wrap #canvas__Wrap .now .now-weather .temp {
+          display: flex;
+          align-items: flex-start;
+          justify-items: flex-start; }
+          .weather__Wrap #canvas__Wrap .now .now-weather .temp .number {
+            font-size: 200rpx;
+            font-weight: 100;
+            line-height: 200rpx; }
+          .weather__Wrap #canvas__Wrap .now .now-weather .temp .degree {
+            font-size: 50rpx;
+            font-weight: 100; }
+        .weather__Wrap #canvas__Wrap .now .now-weather .cur-weather {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          .weather__Wrap #canvas__Wrap .now .now-weather .cur-weather .inline {
+            margin-bottom: 40rpx; }
+            .weather__Wrap #canvas__Wrap .now .now-weather .cur-weather .inline icon {
+              margin-right: 4rpx; }
+            .weather__Wrap #canvas__Wrap .now .now-weather .cur-weather .inline.today {
+              display: flex;
+              width: 100vw; }
+              .weather__Wrap #canvas__Wrap .now .now-weather .cur-weather .inline.today .item {
+                padding-right: 16rpx;
+                margin: 0 16rpx 0 0;
+                flex: 1; }
+              .weather__Wrap #canvas__Wrap .now .now-weather .cur-weather .inline.today .item:not(:last-of-type) {
+                text-align: right;
+                border-right: 2rpx solid rgba(255, 255, 255, 0.4); }
+        .weather__Wrap #canvas__Wrap .now .now-weather .tips {
+          margin-bottom: 60rpx; }
+    .weather__Wrap #canvas__Wrap .tow-days {
+      position: relative;
+      display: flex; }
+      .weather__Wrap #canvas__Wrap .tow-days .item {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        padding-right: 16rpx;
+        margin: 0 16rpx 0 0; }
+        .weather__Wrap #canvas__Wrap .tow-days .item:not(:last-of-type) {
+          border-right: 2rpx solid rgba(255, 255, 255, 0.4); }
+        .weather__Wrap #canvas__Wrap .tow-days .item .left, .weather__Wrap #canvas__Wrap .tow-days .item .right {
+          display: flex;
+          flex-direction: column;
+          justify-items: center; }
+
+.hourly .scrollX {
+  position: relative;
+  width: 928rpx;
+  padding: 40rpx 0;
+  height: 150rpx; }
+
+.hourly .item {
+  display: flex;
+  width: 116rpx; }
+
+.life-style {
+  display: flex;
+  flex-wrap: wrap; }
+  .life-style .item {
+    text-align: center;
+    width: 25%;
+    height: 188rpx;
+    border-right: 2rpx solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    padding: 50rpx 0 0; }
